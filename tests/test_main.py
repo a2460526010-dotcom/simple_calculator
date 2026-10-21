@@ -180,3 +180,19 @@ def test_mod_by_zero_raises_exception():
 
     with pytest.raises(ValueError, match="modulo by zero"):
         calculator.mod(10, 0)
+
+
+def test_power_positive_exponent():
+    calculator = SimpleCalculator()
+
+    result = calculator.power(2, 10)
+
+    assert result == 1024
+
+
+def test_power_fractional_exponent():
+    calculator = SimpleCalculator()
+
+    result = calculator.power(9, 0.5)
+
+    assert result == 3
