@@ -11,7 +11,7 @@
 
 ## 2. 实验目标
 
-通过完整的 Fork、分支、代码修改、提交、Pull Request、审核与合并流程，掌握 GitHub 上多人协作的基本方法。
+通过完整的 Fork、分支、代码修改、提交、Pull Request 与合并流程，掌握 GitHub 单人也能独立完成的基础协作方法。
 
 ## 3. 实施过程
 
@@ -20,8 +20,8 @@
 3. 从默认分支创建功能分支：`feature/github-collaboration-demo`。
 4. 在 `simple_calculator/main.py` 中新增 `mod(a, b)` 取模运算，并处理除数为零的情况。
 5. 在 `tests/test_main.py` 中新增正常取模和除零异常测试。
-6. 提交修改后，通过 Pull Request 将功能分支合并到 Fork 的 `master` 分支。
-7. 在 PR 中留下审核评论，检查改动范围后完成 Merge。
+6. 通过 Pull Request 将包含 3 个提交的功能分支合并到 Fork 的 `master` 分支。
+7. 检查变更范围并完成 Merge；因只有单人账号，不执行双人账号的审核评论环节。
 
 ## 4. 本次代码改动
 
@@ -34,10 +34,10 @@
 
 - 源分支：`feature/github-collaboration-demo`
 - 目标分支：`master`
-- PR 链接：创建后补充
-- 审核评论：合并前在本 PR 中补充
-- 合并状态：合并后确认
+- PR 链接：[#1](https://github.com/a2460526010-dotcom/simple_calculator/pull/1)
+- 审核评论：单人账号模式下未执行
+- 合并状态：Merged，已合并到 `master`
 
 ## 6. 实验结论
 
-GitHub 的 Fork、分支、提交、Pull Request 和评论机制将代码变更、审查意见与合并记录关联在同一个可追溯的工作流中。在本实验环境中只有一个 GitHub 账号，因此采用个人 Fork 内的功能分支向 `master` 发起 PR，并公开记录审核与合并过程；若使用两个账号，则可由另一位成员在原仓库完成复核和合并。
+GitHub 的 Fork、分支、提交、Pull Request 和合并机制将代码变更与合并记录关联在同一个可追溯的工作流中。本实验完成了单人可独立执行的完整流程；双人互相审核与交叉合并需要第二个 GitHub 账号参与。
