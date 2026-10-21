@@ -22,6 +22,11 @@ class SimpleCalculator:
         except ZeroDivisionError:
             return float("inf")
 
+    def mod(self, a, b):
+        if b == 0:
+            raise ValueError("modulo by zero")
+        return a % b
+
     def avg(self, it, lt=None, ut=None):
         count = 0
         total = 0
