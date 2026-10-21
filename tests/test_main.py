@@ -165,3 +165,18 @@ def test_avg_accepts_generators():
     calculator = SimpleCalculator()
     result = calculator.avg(i for i in [2, 5, 12, 98])
     assert result == 29.25
+
+
+def test_mod_returns_remainder():
+    calculator = SimpleCalculator()
+
+    result = calculator.mod(10, 3)
+
+    assert result == 1
+
+
+def test_mod_by_zero_raises_exception():
+    calculator = SimpleCalculator()
+
+    with pytest.raises(ValueError, match="modulo by zero"):
+        calculator.mod(10, 0)
