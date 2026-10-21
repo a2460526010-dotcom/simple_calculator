@@ -43,3 +43,7 @@ class SimpleCalculator:
             return 0
 
         return total / count
+
+
+    def power(self, base, exponent):
+        return base ** exponent
